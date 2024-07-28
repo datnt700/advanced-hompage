@@ -58,12 +58,7 @@ main {
   flex-direction: column;
 }
 
-.left-side {
-  width: 50%;
-}
-
 .right-side {
-  width: 50%;
   position: relative;
 }
 
@@ -350,6 +345,12 @@ footer .footer-logo .logo-text {
 @media screen and (min-width: 1024px) {
   .introduction {
     flex-direction: row;
+  }
+  .left-side {
+    width: 50%;
+  }
+  .right-side {
+    width: 50%;
   }
   .info .title {
     font-size: 3rem;

@@ -61,13 +61,7 @@ main {
   display: flex;
   flex-direction: column;
 }
-
-.left-side {
-  width: 50%;
-}
-
 .right-side {
-  width: 50%;
   position: relative;
 }
 
@@ -386,6 +380,14 @@ footer {
 @media screen and (min-width: 1024px) {
   .introduction {
     flex-direction: row;
+  }
+
+  .left-side {
+    width: 50%;
+  }
+
+  .right-side {
+    width: 50%;
   }
   .info .title {
     font-size: 3rem;
