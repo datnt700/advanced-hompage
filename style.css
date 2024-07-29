@@ -53,7 +53,7 @@ main {
 }
 
 .introduction {
-  padding: 0 1rem 6rem;
+  padding: 0 2rem 6rem;
   display: flex;
   flex-direction: column;
 }
@@ -122,7 +122,7 @@ main {
   background-position: 50%;
 }
 .creative-process .process {
-  padding: 6rem 1rem;
+  padding: 6rem 2rem;
 }
 
 .intro-info {
@@ -144,7 +144,6 @@ main {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 3rem;
-  padding: 0 5rem;
 }
 
 .component-info {
@@ -304,32 +303,20 @@ footer .footer-logo .logo-text {
   header {
     padding: 1.5rem 2rem 6rem;
   }
-  .introduction {
-    padding: 0 0 6rem 2rem;
-  }
   .intro-info .title {
     font-size: 2.25rem;
   }
   .intro-info .description {
     font-size: 1rem;
   }
-  .creative-process .process {
-    padding: 6rem 3rem;
-  }
-  .creative-process .info .title {
+  .creative-process .intro-info .title {
     font-size: 4rem;
   }
-  .creative-process .info .description {
+  .creative-process .intro-info .description {
     font-size: 1rem;
   }
-  .creative-process .component-list {
-    padding: 0 8rem;
-  }
-  .features {
-    padding: 6rem 4rem 4.8rem;
-  }
-  .features .feature-list {
-    padding-right: 7rem;
+  .component-info .description {
+    max-width: 20rem;
   }
   footer {
     padding: 6rem 2rem;
@@ -370,7 +357,7 @@ footer .footer-logo .logo-text {
   .creative-process .component-list {
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
-    padding: 0 10rem;
+    align-items: start;
   }
   .creative-process .intro-info .title {
     padding: 0 14rem;
@@ -380,9 +367,6 @@ footer .footer-logo .logo-text {
   }
   .features .feature-list .feature-item {
     align-items: center;
-  }
-  .features .feature-list .feature-item .description {
-    padding-right: 10rem;
   }
   .feature-item {
     grid-template-columns: repeat(2, 1fr);
@@ -405,7 +389,7 @@ footer .footer-logo .logo-text {
   }
   footer .footer-container {
     flex-direction: row;
-    gap: 6rem;
+    justify-content: space-between;
   }
   footer .footer-container .title {
     font-size: 2.25rem;
@@ -417,12 +401,8 @@ footer .footer-logo .logo-text {
   }
 }
 @media screen and (min-width: 1280px) {
-  .info .title {
+  .intro-info .title {
     font-size: 4rem;
-    padding-right: 7rem;
-  }
-  .info .description {
-    padding-right: 10rem;
   }
   .hero-img {
     top: -7rem;
@@ -439,10 +419,6 @@ footer .footer-logo .logo-text {
   }
   .creative-process .process .component-list {
     grid-template-columns: repeat(4, 1fr);
-    padding: 0 5rem;
-  }
-  footer .footer-container {
-    gap: 15rem;
   }
 }
 

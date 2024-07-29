@@ -56,7 +56,7 @@ main {
 }
 
 .introduction {
-  padding: 0 1rem 6rem;
+  padding: 0 2rem 6rem;
 
   display: flex;
   flex-direction: column;
@@ -128,7 +128,7 @@ main {
   background-position: 50%;
 
   .process {
-    padding: 6rem 1rem;
+    padding: 6rem 2rem;
   }
 }
 
@@ -153,7 +153,6 @@ main {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 3rem;
-  padding: 0 5rem;
 }
 
 .component-info {
@@ -326,10 +325,6 @@ footer {
     padding: 1.5rem 2rem 6rem;
   }
 
-  .introduction {
-    padding: 0 0 6rem 2rem;
-  }
-
   .intro-info {
     .title {
       font-size: 2.25rem;
@@ -340,10 +335,7 @@ footer {
   }
 
   .creative-process {
-    .process {
-      padding: 6rem 3rem;
-    }
-    .info {
+    .intro-info {
       .title {
         font-size: 4rem;
       }
@@ -352,15 +344,16 @@ footer {
         font-size: 1rem;
       }
     }
-    .component-list {
-      padding: 0 8rem;
-    }
+  }
+
+  .component-info .description {
+    max-width: 20rem;
   }
 
   .features {
-    padding: 6rem 4rem 4.8rem;
+    // padding: 6rem 4rem 4.8rem;
     .feature-list {
-      padding-right: 7rem;
+      // padding-right: 7rem;
     }
   }
 
@@ -410,7 +403,7 @@ footer {
     .component-list {
       grid-template-columns: repeat(2, 1fr);
       gap: 5rem;
-      padding: 0 10rem;
+      align-items: start;
     }
 
     .intro-info {
@@ -425,10 +418,6 @@ footer {
 
       .feature-item {
         align-items: center;
-
-        .description {
-          padding-right: 10rem;
-        }
       }
     }
   }
@@ -460,7 +449,7 @@ footer {
   footer {
     .footer-container {
       flex-direction: row;
-      gap: 6rem;
+      justify-content: space-between;
 
       .title {
         font-size: 2.25rem;
@@ -476,13 +465,9 @@ footer {
 }
 
 @media screen and (min-width: 1280px) {
-  .info {
+  .intro-info {
     .title {
       font-size: 4rem;
-      padding-right: 7rem;
-    }
-    .description {
-      padding-right: 10rem;
     }
   }
 
@@ -501,13 +486,7 @@ footer {
       background-size: cover;
       .component-list {
         grid-template-columns: repeat(4, 1fr);
-        padding: 0 5rem;
       }
-    }
-  }
-  footer {
-    .footer-container {
-      gap: 15rem;
     }
   }
 }
